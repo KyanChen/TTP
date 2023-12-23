@@ -12,25 +12,25 @@
 [//]: # (</div>)
 <br>
 <div align="center">
-  <a href="https://kychen.me/RSPrompter">
+  <a href="https://kychen.me/TTP">
     <span style="font-size: 20px; ">项目主页</span>
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://arxiv.org/abs/2306.16269">
+  <a href="https://arxiv.org/abs/xxxx">
     <span style="font-size: 20px; ">arXiv</span>
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://huggingface.co/spaces/KyanChen/RSPrompter">
+  <a href="https://huggingface.co/spaces/KyanChen/TTP">
     <span style="font-size: 20px; ">HFSpace</span>
   </a>
 </div>
 <br>
 <br>
 
-[![GitHub stars](https://badgen.net/github/stars/KyanChen/RSPrompter)](https://github.com/KyanChen/RSPrompter)
+[![GitHub stars](https://badgen.net/github/stars/KyanChen/TTP)](https://github.com/KyanChen/TTP)
 [![license](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
-[![arXiv](https://img.shields.io/badge/arXiv-2306.16269-b31b1b.svg)](https://arxiv.org/abs/2306.16269)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/KyanChen/RSPrompter)
+[![arXiv](https://img.shields.io/badge/arXiv-xxx-b31b1b.svg)](https://arxiv.org/abs/xxx)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/KyanChen/TTP)
 
 <br>
 <br>
@@ -44,7 +44,7 @@
 
 ## 简介
 
-本项目仓库是论文 [RSPrompter: Learning to Prompt for Remote Sensing Instance Segmentation based on Visual Foundation Model](https://arxiv.org/abs/2306.16269) 的代码实现，基于 [MMDetection](https://github.com/open-mmlab/mmdetection/tree/main) 项目进行开发。
+本项目仓库是论文 [Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection](https://arxiv.org/abs/xxxx) 的代码实现，基于 [MMDetection](https://github.com/open-mmlab/mmdetection/tree/main) 项目进行开发。
 
 当前分支在PyTorch 2.x 和 CUDA 12.1 下测试通过，支持 Python 3.7+，能兼容绝大多数的 CUDA 版本。
 
