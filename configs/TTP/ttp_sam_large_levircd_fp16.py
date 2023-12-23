@@ -15,12 +15,10 @@ default_hooks = dict(
     param_scheduler=dict(type='ParamSchedulerHook'),
     checkpoint=dict(type='CheckpointHook', by_epoch=True, interval=10, save_best='cd/iou_changed', max_keep_ckpts=5, greater_keys=['cd/iou_changed'], save_last=True),
     sampler_seed=dict(type='DistSamplerSeedHook'),
-    visualization=dict(type='CDVisualizationHook', interval=1,
-                       img_shape=(1024, 1024, 3))
+    visualization=dict(type='CDVisualizationHook', interval=1, img_shape=(1024, 1024, 3))
 )
 vis_backends = [dict(type='CDLocalVisBackend'),
-                dict(type='WandbVisBackend',
-                     init_kwargs=dict(project='samcd', group='levircd', name='ttp_sam_large_levircd_fp16'))
+                dict(type='WandbVisBackend', init_kwargs=dict(project='samcd', group='levircd', name='ttp_sam_large_levircd_fp16'))
                 ]
 
 visualizer = dict(
