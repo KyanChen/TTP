@@ -2,7 +2,7 @@ default_scope = 'opencd'
 
 work_dir = 'work_dirs/lervicd/ttp_sam_large_levircd'
 
-custom_imports = dict(imports=['mmseg.samcd'], allow_failed_imports=False)
+custom_imports = dict(imports=['mmseg.ttp'], allow_failed_imports=False)
 
 env_cfg = dict(
     cudnn_benchmark=True,
@@ -64,7 +64,7 @@ model = dict(
             use_abs_pos=True,
             use_rel_pos=True,
             window_size=14,
-            layer_cfgs=dict(type='TimeFusionTransformerEncoderLayer', policy='concat'),
+            layer_cfgs=dict(type='TimeFusionTransformerEncoderLayer'),
             init_cfg=dict(type='Pretrained', checkpoint=sam_pretrain_ckpt_path, prefix='backbone.'),
         ),
         peft_cfg=dict(
@@ -91,7 +91,7 @@ model = dict(
         ],
     ),
     decode_head=dict(
-        type='SAMCDSegHead',
+        type='MLPSegHead',
         out_size=(128, 128),
         in_channels=[256]*5,
         in_index=[0, 1, 2, 3, 4],

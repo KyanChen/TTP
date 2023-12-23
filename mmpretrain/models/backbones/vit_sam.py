@@ -507,7 +507,10 @@ class ViTSAM(BaseBackbone):
                 use_rel_pos=use_rel_pos,
                 norm_cfg=norm_cfg)
             _layer_cfg.update(layer_cfgs[i])
-            self.layers.append(TransformerEncoderLayer(**_layer_cfg))
+            if 'type' in _layer_cfg:
+                self.layers.append(MODELS.build(_layer_cfg))
+            else:
+                self.layers.append(TransformerEncoderLayer(**_layer_cfg))
 
         self.out_channels = out_channels
         if self.out_channels > 0:
