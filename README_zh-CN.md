@@ -147,8 +147,6 @@ mim install "mmcv>=2.0.0"
 pip install -U wandb einops import_lib
 ```
 
-注解：Windows 系统下对 DeepSpeed 的支持尚未完善，我们建议您在 Linux 系统下使用 DeepSpeed。
-
 
 </details>
 
