@@ -44,7 +44,7 @@
 
 ## 简介
 
-本项目仓库是论文 [Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection](https://arxiv.org/abs/xxxx) 的代码实现，基于 [MMDetection](https://github.com/open-mmlab/mmdetection/tree/main) 项目进行开发。
+本项目仓库是论文 [Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection](https://arxiv.org/abs/xxxx) 的代码实现，基于 [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) 和 [Open-CD](https://github.com/likyoo/open-cd) 项目进行开发。
 
 当前分支在PyTorch 2.x 和 CUDA 12.1 下测试通过，支持 Python 3.7+，能兼容绝大多数的 CUDA 版本。
 
@@ -53,39 +53,24 @@
 <details open>
 <summary>主要特性</summary>
 
-- 与 MMDetection 高度保持一致的 API 接口及使用方法
-- 开源了论文中的 SAM-seg、SAM-det、RSPrompter 等模型
-- 通过了 AMP、DeepSpeed 等训练方式的测试
-- 支持了多种数据集的训练和测试
+- 与 MMSegmentation 高度保持一致的 API 接口及使用方法
+- 开源了论文中的 TTP 模型
+- 通过了 AMP 训练方式的测试
+- 支持了多种数据集扩展
 
 </details>
 
 ## 更新日志
 
-🌟 **2023.06.29** 发布了 RSPrompter 项目，基于Lightning和MMDetection实现了论文中的SAM-seg、SAM-det、RSPrompter等模型。
+🌟 **2023.12.23** 发布了 TTP 项目代码，完全与 MMSegmentation 保持一致的API接口及使用方法。
 
-🌟 **2023.11.25** 更新了RSPrompter的代码，完全与MMDetection保持一致的API接口及使用方法。
+[//]: # (## TODO)
 
-🌟 **2023.11.26** 加入了LoRA高效微调方法，并使得输入图像尺寸可变，减小了模型的显存占用。
-
-🌟 **2023.11.26** 提供了各个模型的显存占用参考，具体见[常见问题](#常见问题)。
-
-🌟 **2023.11.30** 更新了论文内容，见[Arxiv](https://arxiv.org/abs/2306.16269)。
-
-
-## TODO
-
-- [X] 与MMDetection保持一致的API接口及使用方法
-- [X] 通过减小图像输入并结合大模型微调技术在保证性能的同时减小模型的显存占用
-- [X] 动态可变的图像尺寸输入
-- [X] 在模型中加入高效微调的方法
-- [ ] 加入SAM-cls模型
 
 ## 目录
 
 - [简介](#简介)
 - [更新日志](#更新日志)
-- [TODO](#TODO)
 - [目录](#目录)
 - [安装](#安装)
 - [数据集准备](#数据集准备)
@@ -333,8 +318,8 @@ python zero_to_fp32.py . $SAVE_CHECKPOINT_NAME -t $CHECKPOINT_DIR  # $SAVE_CHECK
 
 |         模型名称          |  骨干网络类型  | 图像尺寸 |        GPU         | Batch Size |    加速策略    | 单卡显存占用  |
 |:---------------------:|:--------:| :------: |:------------------:|:----------:|:----------:|:-------:|
-| SAM-seg (Mask R-CNN)  | ViT-B/16 | 1024x1024 |  1x RTX 4090 24G   |     8      |  AMP FP16  | 19.4 GB |
-| SAM-seg (Mask2Former) | ViT-B/16 | 1024x1024 |  1x RTX 4090 24G   |     8      |  AMP FP16  | 21.5 GB |
+| SAM-seg (Mask R-CNN)  | ViT-B/16 | 1024x1024 |  1x RTX 4090 24G   |     8      |  AMP FP16  |  14 GB  | 3H
+| SAM-seg (Mask2Former) | ViT-B/16 | 1024x1024 |  1x RTX 4090 24G   |     8      |  AMP FP16  |  12 GB  | 2H
 |        SAM-det        | ResNet50 | 1024x1024 |  1x RTX 4090 24G   |     8      |    FP32    | 16.6 GB |
 |   RSPrompter-anchor   | ViT-B/16 | 1024x1024 |  1x RTX 4090 24G   |     2      |  AMP FP16  | 20.9 GB |
 |   RSPrompter-query    | ViT-B/16 | 1024x1024 |  1x RTX 4090 24G   |     1      |  AMP FP16  |   OOM   |
