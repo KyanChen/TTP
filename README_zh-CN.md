@@ -144,7 +144,7 @@ mim install "mmcv>=2.0.0"
 **步骤 4**：安装其他依赖项。
 
 ```shell
-pip install -U wandb einops importlib
+pip install -U wandb einops importlib peft scipy ftfy
 ```
 
 
@@ -347,6 +347,8 @@ python zero_to_fp32.py . $SAVE_CHECKPOINT_NAME -t $CHECKPOINT_DIR  # $SAVE_CHECK
 
 如果您在运行`dist_train.sh`时出现了`Bad substitution`的错误，请使用`bash dist_train.sh`来运行脚本。
 
+
+### 5. You should set `PYTHONPATH` to make `sys.path` include the directory which contains your custom module
 
 </details>
 
