@@ -1,13 +1,15 @@
 <div align="center">
     <h2>
-        RSPrompter: Learning to Prompt for Remote Sensing Instance Segmentation based on Visual Foundation Model
+        Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection
     </h2>
 </div>
 <br>
 
-<div align="center">
-  <img src="resources/RSPrompter.png" width="800"/>
-</div>
+[//]: # (<div align="center">)
+
+[//]: # (  <img src="resources/RSPrompter.png" width="800"/>)
+
+[//]: # (</div>)
 <br>
 <div align="center">
   <a href="https://kychen.me/RSPrompter">
@@ -144,7 +146,7 @@ mim install "mmcv>=2.0.0"
 **步骤 4**：安装其他依赖项。
 
 ```shell
-pip install -U wandb einops importlib peft scipy ftfy
+pip install -U wandb einops importlib peft scipy ftfy prettytable torchmetrics
 ```
 
 

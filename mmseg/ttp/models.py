@@ -32,8 +32,6 @@ class MMPretrainSamVisionEncoder(BaseModule):
         super().__init__(init_cfg=init_cfg)
         vision_encoder = MODELS.build(encoder_cfg)
         vision_encoder.init_weights()
-        if not self.with_patch_embed:
-            del vision_encoder.patch_embed
         if peft_cfg is not None and isinstance(peft_cfg, dict):
             config = {
                 "peft_type": "LORA",
