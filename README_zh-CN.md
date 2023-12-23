@@ -144,7 +144,7 @@ mim install "mmcv>=2.0.0"
 **步骤 4**：安装其他依赖项。
 
 ```shell
-pip install -U wandb einops import_lib
+pip install -U wandb einops importlib
 ```
 
 
