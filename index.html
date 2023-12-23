@@ -1,0 +1,394 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--
+    <script src="./resources/jsapi" type="text/javascript"></script>
+    <script type="text/javascript" async>google.load("jquery", "1.3.2");</script>
+   -->
+    <style type="text/css">
+        @font-face {
+            font-family: 'Avenir Book';
+            src: url("./fonts/Avenir_Book.ttf"); /* File to be stored at your site */
+        }
+        body {
+            font-family: "Avenir Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight:300;
+            font-size:14px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1200px;
+        }
+        h1 {
+            font-weight:300;
+        }
+        h2 {
+            font-weight:300;
+        }
+
+        p {
+            font-weight:300;
+            line-height: 1.4;
+        }
+
+        code {
+            font-size: 0.8rem;
+            margin: 0 0.2rem;
+            padding: 0.5rem 0.8rem;
+            white-space: nowrap;
+            background: #efefef;
+            border: 1px solid #d3d3d3;
+            color: #000000;
+            border-radius: 3px;
+        }
+
+        pre > code {
+            display: block;
+            white-space: pre;
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+        }
+
+        pre.prettyprint > code {
+            border: none;
+        }
+
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        .image {
+            flex-basis: 40%
+        }
+        .text {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .disclaimerbox {
+            background-color: #eee;
+            border: 1px solid #eeeeee;
+            border-radius: 10px ;
+            -moz-border-radius: 10px ;
+            -webkit-border-radius: 10px ;
+            padding: 20px;
+        }
+
+        video.header-vid {
+            height: 140px;
+            border: 1px solid black;
+            border-radius: 10px ;
+            -moz-border-radius: 10px ;
+            -webkit-border-radius: 10px ;
+        }
+
+        img.header-img {
+            height: 140px;
+            border: 1px solid black;
+            border-radius: 10px ;
+            -moz-border-radius: 10px ;
+            -webkit-border-radius: 10px ;
+        }
+
+        img.rounded {
+            border: 0px solid #eeeeee;
+            border-radius: 10px ;
+            -moz-border-radius: 10px ;
+            -webkit-border-radius: 10px ;
+
+        }
+
+        a:link,a:visited
+        {
+            color: #1367a7;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #208799;
+        }
+
+        td.dl-link {
+            height: 160px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+            box-shadow:
+                    0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                    5px 5px 0 0px #fff, /* The second layer */
+                    5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                    10px 10px 0 0px #fff, /* The third layer */
+                    10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                    15px 15px 0 0px #fff, /* The fourth layer */
+                    15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                    20px 20px 0 0px #fff, /* The fifth layer */
+                    20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                    25px 25px 0 0px #fff, /* The fifth layer */
+                    25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+            margin-left: 10px;
+            margin-right: 45px;
+        }
+
+
+        .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+            box-shadow:
+                    0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                    5px 5px 0 0px #fff, /* The second layer */
+                    5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                    10px 10px 0 0px #fff, /* The third layer */
+                    10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 30px;
+            margin-bottom: 5px;
+        }
+
+        .vert-cent {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        hr
+        {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+    </style>
+    <title>Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection</title>
+</head>
+
+<body>
+<br>
+<span style="font-size:36px">
+    <div style="text-align: center;">
+        Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection
+    </div>
+</span>
+<br>
+<br>
+<br>
+<table align="center" width="1200px">
+    <tr>
+        <td align="center" width="200px">
+            <div style="text-align: center;">
+                <span style="font-size:16px"><a href="https://kyanchen.github.io/">Keyan Chen</a><sup>1</sup></span>
+            </div>
+        </td>
+        <td align="center" width="200px">
+            <div style="text-align: center;">
+                <span style="font-size:16px"><a href="https://github.com/Chen-Yang-Liu">Chenyang Liu</a><sup>1</sup></span>
+            </div>
+        </td>
+        <td align="center" width="200px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">Wenyuan Li<sup>2</sup></span>
+            </div>
+        </td>
+
+        <td align="center" width="200px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">Zili Liu<sup>1,3</sup></span>
+            </div>
+        </td>
+
+        <td align="center" width="200px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">Hao Chen<sup>3</sup></span>
+            </div>
+        </td>
+
+        <td align="center" width="200px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">Haotian Zhang<sup>1</sup></span>
+            </div>
+        </td>
+
+        <td align="center" width="200px">
+            <div style="text-align: center;">
+                <span style="font-size:16px"><a href="https://zhengxiazou.github.io/">Zhengxia Zou</a><sup>1</sup></span>
+            </div>
+        </td>
+
+        <td align="center" width="200px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">
+                    <a href="https://levir.buaa.edu.cn/">Zhenwei Shi</a>
+                    <!--                    <sup><img class="round" style="width:20px" src="./resources/corresponding_fig.png">3</sup>-->
+                    <sup>&#9993 1</sup>
+                </span>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<table align="center" width="1000px">
+    <tbody>
+    <tr>
+        <td align="center" width="200px">
+            <center>
+                <span style="font-size:16px">Beihang University<sup>1</sup></span>
+            </center>
+        </td>
+
+        <td align="center" width="200px">
+            <center>
+                <span style="font-size:16px">University of Hong Kong<sup>2</sup></span>
+            </center>
+        </td>
+
+        <td align="center" width="200px">
+            <center>
+                <span style="font-size:16px">Shanghai AI Laboratory<sup>3</sup></span>
+            </center>
+        </td>
+
+    </tr>
+    </tbody>
+</table>
+
+
+<!--<table align="center" width="700px">-->
+<!--    <tbody>-->
+<!--    <tr>-->
+<!--        <td align="center" width="300px">-->
+<!--            <center>-->
+<!--                <span style="font-size:16px"><sup>&star;</sup>equal contribution</span>-->
+<!--            </center>-->
+<!--        </td>-->
+
+<!--        <td align="center" width="300px">-->
+<!--            <center>-->
+<!--                <span style="font-size:16px"><sup>&#9993</sup>corresponding author</span>-->
+<!--            </center>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+
+<br>
+<table align="center" width="700px">
+    <tbody>
+    <tr>
+        <td align="center" width="200px">
+            <div style="text-align: center;">
+                <span style="font-size:20px">
+                    Code
+                    <a href="https://github.com/KyanChen/TTP">[GitHub]</a>
+                </span>
+            </div>
+        </td>
+
+        <td align="center" width="240px">
+            <div style="text-align: center;">
+                <span style="font-size:20px">
+                    Demo
+                    <a href="https://huggingface.co/spaces/KyanChen/TTP">[HuggingFace]</a>
+                </span>
+            </div>
+        </td>
+
+        <td align="center" width="200px">
+            <div style="text-align: center;">
+                <span style="font-size:20px">
+                    Paper
+                    <a href="https://arxiv.org/abs/xxxx">[arXiv]</a>
+                </span>
+            </div>
+        </td>
+
+        <td align="center" width="200px">
+            <center>
+                <span style="font-size:20px">
+                    Cite <a href="resources/cite.txt"> [BibTeX]</a>
+                </span>
+            </center>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<hr>
+
+<div style="text-align: center;">
+    <h2>Teaser</h2>
+</div>
+
+
+<br>
+<hr>
+<div style="text-align: center;">
+    <h2>Abstract</h2>
+</div>
+
+<table>
+    <tr>
+        <td>
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+                Change detection, a prominent research area in remote sensing, is pivotal in observing and analyzing surface transformations. Despite significant advancements achieved through deep learning-based methods, executing high-precision change detection in spatio-temporally complex remote sensing scenarios still presents a substantial challenge. The recent emergence of foundation models, with their powerful universality and generalization capabilities, offers potential solutions. However, bridging the gap of data and tasks remains a significant obstacle. In this paper, we introduce Time Travelling Pixels (TTP), a novel approach that integrates the latent knowledge of the SAM foundation model into change detection. This method effectively addresses the domain shift in general knowledge transfer and the challenge of expressing homogeneous and heterogeneous characteristics of multi-temporal images. The state-of-the-art results obtained on the LEVIR-CD underscore the efficacy of the TTP. The Code is available at https://kychen.me/TTP.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<br>
+<hr>
+<div style="text-align: center;">
+    <h2>Architecture</h2>
+</div>
+
+<table>
+    <tr>
+        <td>
+            <div style="text-align: center;">
+                <img src="resources/model.png" width="1100px">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+                <br>
+                We exploit the general segmentation capabilities of the SAM to construct a change detection network, TTP. TTP is primarily composed of three components: a foundational model backbone based on low-rank fine-tuning; a time-traveling activation gate interposed between dual-temporal features; and an efficient multi-level decoding head. The structure is depicted in the figure.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<br>
+<hr>
+<div style="text-align: center;">
+    <h2>Quantitative Results on LEVIR-CD</h2>
+</div>
+
+<br>
+<br>
+<div style="text-align: center;">
+    <img src="resources/levircd.png" width="600px">
+</div>
+
+
+
+<br>
+<hr>
+
+<div style="text-align: center;">
+    <h2>Acknowledgements</h2>
+</div>
+<p>
+    Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
+</p>
+
+<br>
+<br>
+<br>
+
+</body>
+</html>
