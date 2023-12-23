@@ -108,7 +108,7 @@
 
 ### 环境安装
 
-我们推荐使用 Miniconda 来进行安装，以下命令将会创建一个名为 `rsprompter` 的虚拟环境，并安装 PyTorch 和 MMCV。
+我们推荐使用 Miniconda 来进行安装，以下命令将会创建一个名为 `ttp` 的虚拟环境，并安装 PyTorch 和 MMCV。
 
 注解：如果你对 PyTorch 有经验并且已经安装了它，你可以直接跳转到下一小节。否则，你可以按照下述步骤进行准备。
 
@@ -144,15 +144,7 @@ mim install "mmcv>=2.0.0"
 **步骤 4**：安装其他依赖项。
 
 ```shell
-pip install -U transformers wandb einops pycocotools shapely scipy terminaltables importlib peft mat4py
-```
-
-**步骤 5**：[可选] 安装 DeepSpeed。
-
-如果您想使用 DeepSpeed 训练模型，您需要安装 DeepSpeed。DeepSpeed 的安装方法可以参考 [DeepSpeed 官方文档](https://github.com/microsoft/DeepSpeed)。
-
-```shell
-pip install deepspeed
+pip install -U wandb einops import_lib
 ```
 
 注解：Windows 系统下对 DeepSpeed 的支持尚未完善，我们建议您在 Linux 系统下使用 DeepSpeed。
