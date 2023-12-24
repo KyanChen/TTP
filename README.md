@@ -23,6 +23,10 @@
   <a href="https://huggingface.co/spaces/KyanChen/TTP">
     <span style="font-size: 20px; ">HFSpace</span>
   </a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="resources/ttp.pdf">
+    <span style="font-size: 20px; ">PDF</span>
+  </a>
 </div>
 <br>
 <br>
