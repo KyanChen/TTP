@@ -16,7 +16,7 @@
     <span style="font-size: 20px; ">Project Page</span>
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://arxiv.org/abs/xxxx">
+  <a href="https://arxiv.org/abs/2312.16202">
     <span style="font-size: 20px; ">arXiv</span>
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
@@ -33,7 +33,7 @@
 
 [![GitHub stars](https://badgen.net/github/stars/KyanChen/TTP)](https://github.com/KyanChen/TTP)
 [![license](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
-[![arXiv](https://img.shields.io/badge/arXiv-xxx-b31b1b.svg)](https://arxiv.org/abs/xxx)
+[![arXiv](https://img.shields.io/badge/arXiv-2312.16202-b31b1b.svg)](https://arxiv.org/abs/2312.16202)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/KyanChen/TTP)
 
 <br>
@@ -48,7 +48,7 @@ English | [简体中文](README_zh-CN.md)
 
 ## Introduction
 
-The repository is the code implementation of the paper [Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection](https://arxiv.org/abs/xxxx), based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) and [Open-CD](https://github.com/likyoo/open-cd) projects.
+The repository is the code implementation of the paper [Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection](https://arxiv.org/abs/2312.16202), based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) and [Open-CD](https://github.com/likyoo/open-cd) projects.
 
 The current branch has been tested under PyTorch 2.x and CUDA 12.1, supports Python 3.7+, and is compatible with most CUDA versions.
 
@@ -307,14 +307,21 @@ Please check the detailed error message, generally some dependent packages are n
 
 ## Acknowledgements
 
-The repository is the code implementation of the paper [Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection](https://arxiv.org/abs/xxxx), based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) and [Open-CD](https://github.com/likyoo/open-cd) projects.
+The repository is the code implementation of the paper [Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection](https://arxiv.org/abs/2312.16202), based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) and [Open-CD](https://github.com/likyoo/open-cd) projects.
 
 ## Citation
 
 If you use the code or performance benchmarks of this project in your research, please refer to the following bibtex to cite TTP.
 
 ```
-xxx
+@misc{chen2023time,
+      title={Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection}, 
+      author={Keyan Chen and Chengyang Liu and Wenyuan Li and Zili Liu and Hao Chen and Haotian Zhang and Zhengxia Zou and Zhenwei Shi},
+      year={2023},
+      eprint={2312.16202},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## License

@@ -315,7 +315,14 @@ python demo/image_demo.py ${IMAGE_DIR}  configs/TTP/xxx.py --weights ${CHECKPOIN
 如果你在研究中使用了本项目的代码或者性能基准，请参考如下 bibtex 引用 TTP。
 
 ```
-xxx
+@misc{chen2023time,
+      title={Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection}, 
+      author={Keyan Chen and Chengyang Liu and Wenyuan Li and Zili Liu and Hao Chen and Haotian Zhang and Zhengxia Zou and Zhenwei Shi},
+      year={2023},
+      eprint={2312.16202},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## 开源许可证
