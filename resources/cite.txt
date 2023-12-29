@@ -1,0 +1,8 @@
+@misc{chen2023time,
+      title={Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection},
+      author={Keyan Chen and Chengyang Liu and Wenyuan Li and Zili Liu and Hao Chen and Haotian Zhang and Zhengxia Zou and Zhenwei Shi},
+      year={2023},
+      eprint={2312.16202},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
