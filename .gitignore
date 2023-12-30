@@ -1,3 +1,6 @@
+*.pth
+gradio_cached_examples/
+
 .idea
 .DS_Store
 work_dirs/
