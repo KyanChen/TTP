@@ -255,13 +255,7 @@ sh ./tools/dist_test.sh configs/TTP/xxx.py ${CHECKPOINT_FILE} ${GPU_NUM}  # xxx.
 #### Single Image Prediction:
 
 ```shell
-python demo/image_demo.py ${IMAGE_FILE}  configs/TTP/xxx.py --weights ${CHECKPOINT_FILE} --out-dir ${OUTPUT_DIR}  # IMAGE_FILE is the image file you want to predict, xxx.py is the configuration file you want to use, CHECKPOINT_FILE is the checkpoint file you want to use, OUTPUT_DIR is the output path of the prediction result
-```
-
-#### Multiple Image Prediction:
-
-```shell
-python demo/image_demo.py ${IMAGE_DIR}  configs/TTP/xxx.py --weights ${CHECKPOINT_FILE} --out-dir ${OUTPUT_DIR}  # IMAGE_DIR is the image folder you want to predict, xxx.py is the configuration file you want to use, CHECKPOINT_FILE is the checkpoint file you want to use, OUTPUT_DIR is the output path of the prediction result
+python demo/image_demo_with_cdinferencer.py ${IMAGE_FILE1} ${IMAGE_FILE1} configs/TTP/ttp_sam_large_levircd_infer.py --weights ${CHECKPOINT_FILE} --out-dir ${OUTPUT_DIR}  # IMAGE_FILE is the image file you want to predict, xxx.py is the configuration file, CHECKPOINT_FILE is the checkpoint file you want to use, OUTPUT_DIR is the output path of the prediction result
 ```
 
 
