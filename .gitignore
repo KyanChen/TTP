@@ -1,5 +1,6 @@
 .idea
 .DS_Store
+ckpt/
 work_dirs/
 pretrain_models/
 
