@@ -1,4 +1,13 @@
--r requirements/optional.txt
--r requirements/runtime.txt
--r requirements/tests.txt
--r requirements/multimodal.txt
+torch==2.1.2
+torchvision
+torchaudio
+-f https://download.openmmlab.com/mmcv/dist/cpu/torch2.1/index.html
+mmcv==2.1.0
+wandb
+einops
+importlib
+peft
+scipy
+ftfy
+prettytable
+torchmetrics
