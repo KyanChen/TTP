@@ -68,6 +68,8 @@
 
 🌟 **2023.12.23** 发布了 TTP 项目代码，完全与 MMSegmentation 保持一致的API接口及使用方法。
 
+🌟 **2023.12.30** 发布了在 Levir-CD 上训练的[模型](https://huggingface.co/spaces/KyanChen/TTP/blob/main/ckpt/epoch_270.pth)。
+
 [//]: # (## TODO)
 
 

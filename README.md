@@ -68,6 +68,8 @@ If you find this project helpful, please give us a star ⭐️, your support is 
 
 🌟 **2023.12.23** Released the TTP project code, which is completely consistent with the API interface and usage of MMSegmentation.
 
+🌟 **2023.12.30** Released the [model](https://huggingface.co/spaces/KyanChen/TTP/blob/main/ckpt/epoch_270.pth) trained on Levir-CD.
+
 
 ## Table of Contents
 
